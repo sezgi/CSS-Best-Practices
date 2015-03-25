@@ -45,7 +45,6 @@ Our highest priorities are:
   </ul>
 ```
 + Avoid universal rules/selectors: example `.container *`.
-+ `:hover`, etc will perform better if not in a descendant selector.
 + Avoid tag selectors, e.g. `.followers span`. They are neither performant, nor flexible for future scenarios where you might not want all spans to have this style. Use classnames instead. This also makes it more semantic and readable.
 
 ### Selector Efficiency
