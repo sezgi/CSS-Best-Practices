@@ -8,7 +8,7 @@ Our highest priorities are:
  + Semantics (readability)
  + Modularity (reusability, flexibility)
  + Efficiency (performance)
-    - Keep performance in mind, but don't worry too much about it. The main advantage of using performant selectors is that it increases readability and modularity. For example, `.container *` is terrible not just because of performance, but also because it hurts flexibility and and requires future styles to use hacky overrides.
+    - Keep performance in mind, but don't worry too much about it. The main advantage of using performant selectors is that it increases readability and modularity. For example, `.container *` is terrible not just because of performance, but also because it hurts flexibility and requires future styles to use hacky overrides.
     - Steve Souders examined the performance impact of CSS selectors and determined that the delta between the best case and the worst case was 50ms. In other words, consider selector performance but don’t waste too much time on it.
       + http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/
     - Nicole Sullivan's comment on the above article: "Micro-optimization of selectors is going a bit off track in a performance analysis of CSS. The focus should be on scalable CSS. There are two ways to measure 0(n) in CSS. What happens as you add more pages and modules to the site? Then you measure both file size, and HTTP requests. The way you write selectors has a huge impact on both of these that is much more significant than the time it takes the browser to process a reasonable number of selectors (even deeply nested)."
